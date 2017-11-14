@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		DE5D7A761FBB455A005A818B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5D7A751FBB455A005A818B /* AppDelegate.swift */; };
-		DE5D7A781FBB455A005A818B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5D7A771FBB455A005A818B /* FirstViewController.swift */; };
-		DE5D7A7A1FBB455A005A818B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5D7A791FBB455A005A818B /* SecondViewController.swift */; };
+		DE5D7A781FBB455A005A818B /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5D7A771FBB455A005A818B /* TicTacToeViewController.swift */; };
+		DE5D7A7A1FBB455A005A818B /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5D7A791FBB455A005A818B /* ClockViewController.swift */; };
 		DE5D7A7D1FBB455A005A818B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5D7A7B1FBB455A005A818B /* Main.storyboard */; };
 		DE5D7A7F1FBB455A005A818B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5D7A7E1FBB455A005A818B /* Assets.xcassets */; };
 		DE5D7A821FBB455A005A818B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5D7A801FBB455A005A818B /* LaunchScreen.storyboard */; };
+		DE5D7A8A1FBB462F005A818B /* RandomRectanglesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5D7A891FBB462F005A818B /* RandomRectanglesViewController.swift */; };
+		DE5D7A8C1FBB489D005A818B /* TicTacToeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5D7A8B1FBB489D005A818B /* TicTacToeView.swift */; };
+		DE5D7A8E1FBB48B4005A818B /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5D7A8D1FBB48B4005A818B /* ClockView.swift */; };
+		DE5D7A901FBB48C7005A818B /* MondrianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5D7A8F1FBB48C7005A818B /* MondrianView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE5D7A721FBB455A005A818B /* Ready, Set, Draw!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ready, Set, Draw!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5D7A751FBB455A005A818B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE5D7A771FBB455A005A818B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		DE5D7A791FBB455A005A818B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DE5D7A771FBB455A005A818B /* TicTacToeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeViewController.swift; sourceTree = "<group>"; };
+		DE5D7A791FBB455A005A818B /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 		DE5D7A7C1FBB455A005A818B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE5D7A7E1FBB455A005A818B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE5D7A811FBB455A005A818B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE5D7A831FBB455A005A818B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5D7A891FBB462F005A818B /* RandomRectanglesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRectanglesViewController.swift; sourceTree = "<group>"; };
+		DE5D7A8B1FBB489D005A818B /* TicTacToeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeView.swift; sourceTree = "<group>"; };
+		DE5D7A8D1FBB48B4005A818B /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		DE5D7A8F1FBB48C7005A818B /* MondrianView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondrianView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +65,16 @@
 			isa = PBXGroup;
 			children = (
 				DE5D7A751FBB455A005A818B /* AppDelegate.swift */,
-				DE5D7A771FBB455A005A818B /* FirstViewController.swift */,
-				DE5D7A791FBB455A005A818B /* SecondViewController.swift */,
+				DE5D7A771FBB455A005A818B /* TicTacToeViewController.swift */,
+				DE5D7A791FBB455A005A818B /* ClockViewController.swift */,
 				DE5D7A7B1FBB455A005A818B /* Main.storyboard */,
 				DE5D7A7E1FBB455A005A818B /* Assets.xcassets */,
 				DE5D7A801FBB455A005A818B /* LaunchScreen.storyboard */,
 				DE5D7A831FBB455A005A818B /* Info.plist */,
+				DE5D7A891FBB462F005A818B /* RandomRectanglesViewController.swift */,
+				DE5D7A8B1FBB489D005A818B /* TicTacToeView.swift */,
+				DE5D7A8D1FBB48B4005A818B /* ClockView.swift */,
+				DE5D7A8F1FBB48C7005A818B /* MondrianView.swift */,
 			);
 			path = "Ready, Set, Draw!";
 			sourceTree = "<group>";
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE5D7A7A1FBB455A005A818B /* SecondViewController.swift in Sources */,
+				DE5D7A7A1FBB455A005A818B /* ClockViewController.swift in Sources */,
+				DE5D7A8E1FBB48B4005A818B /* ClockView.swift in Sources */,
 				DE5D7A761FBB455A005A818B /* AppDelegate.swift in Sources */,
-				DE5D7A781FBB455A005A818B /* FirstViewController.swift in Sources */,
+				DE5D7A781FBB455A005A818B /* TicTacToeViewController.swift in Sources */,
+				DE5D7A8A1FBB462F005A818B /* RandomRectanglesViewController.swift in Sources */,
+				DE5D7A8C1FBB489D005A818B /* TicTacToeView.swift in Sources */,
+				DE5D7A901FBB48C7005A818B /* MondrianView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +330,7 @@
 				DE5D7A881FBB455A005A818B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
