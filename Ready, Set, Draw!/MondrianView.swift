@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MondrianView: UIView {
+@IBDesignable class MondrianView: UIView {
 
     /*
     // Only override draw() if you perform custom drawing.

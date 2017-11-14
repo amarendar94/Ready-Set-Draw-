@@ -8,14 +8,60 @@
 
 import UIKit
 
-class TicTacToeView: UIView {
+@IBDesignable class TicTacToeView: UIView {
 
-    /*
+    var x:Int?
+    var y:Int?
+    var sign:Character?
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
         // Drawing code
+        
+        let bezier = UIBezierPath()
+        let size = self.frame.size
+        
+        bezier.move(to:CGPoint(x:0.0,y:size.height/3))
+        bezier.addLine(to: CGPoint(x:size.width, y:size.height/3))
+        bezier.move(to:CGPoint(x:0.0,y:size.height*2/3))
+        bezier.addLine(to: CGPoint(x:size.width, y:size.height*2/3))
+        
+        bezier.move(to:CGPoint(x:size.width/3,y:0.0))
+        bezier.addLine(to: CGPoint(x:size.width/3, y:size.height))
+        bezier.move(to:CGPoint(x:size.width*2/3,y:0.0))
+        bezier.addLine(to: CGPoint(x:size.width*2/3, y:size.height))
+        
+        // circle x,y co ordinates multiple of w/6, h/6
+        //     6,6      2,6      1.2,6
+        //     6,2      2,2      1.2,2
+        //     6,1.2    2,1.2    1.2,1.2
+        
+        var w:CGFloat = 1.2
+        var h:CGFloat = 1.2
+        
+        bezier.move(to: CGPoint(x:size.width/CGFloat(w) + size.width/10.0,y:size.height/CGFloat(h)))
+        bezier.addArc(withCenter: CGPoint(x:size.width/w,y:size.height/CGFloat(h)), radius: size.width/10.0, startAngle: 0.0, endAngle: 2 * .pi , clockwise: true)
+        
+        w = 2
+        h = 2
+        
+        bezier.move(to: CGPoint(x:size.width/CGFloat(w) - size.width/10.0, y:size.height/CGFloat(h) - size.height/10.0))
+        bezier.addLine(to: CGPoint(x:size.width/CGFloat(w) + size.width/10.0, y:size.height/CGFloat(h) + size.height/10.0))
+        bezier.move(to: CGPoint(x:size.width/CGFloat(w) + size.width/10.0, y:size.height/CGFloat(h) - size.height/10.0))
+        bezier.addLine(to: CGPoint(x:size.width/CGFloat(w) - size.width/10.0, y:size.height/CGFloat(h) + size.height/10.0))
+        
+        UIColor.blue.setStroke()
+        
+//        bezier.move(to:CGPoint(x:size.width/2.0,y:size.height/2.0))
+//        bezier.addArc(withCenter: CGPoint(x:size.width/2.0,y:size.height/2.0), radius: size.width/10.0, startAngle: 0.0, endAngle: 2 * .pi , clockwise: true)
+        
+        
+        bezier.stroke()
     }
-    */
+    
+    static func drawTicTac(x: Int, y:Int, sign:Character){
+    
+    }
+    
 
 }
