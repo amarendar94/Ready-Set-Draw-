@@ -17,7 +17,7 @@ class TicTacToeViewController: UIViewController {
     
     @IBAction func drawInput(_ sender: Any) {
         inputArray = splitter(data: inputTextField.text!)
-        //TicTacToeView.setNeedsDisplay(<#T##UIView#>)
+        canvas.setNeedsDisplay()
         
         
     }
@@ -25,7 +25,7 @@ class TicTacToeViewController: UIViewController {
     func splitter(data:String)->[String]{
         var tictacArray:[String] = []
         for tic in data.components(separatedBy: " "){
-            tictacArray.append(String(tic)!)
+            tictacArray.append(tic)
         }
         return tictacArray
     }
