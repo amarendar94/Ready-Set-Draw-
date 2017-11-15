@@ -18,8 +18,6 @@ class TicTacToeViewController: UIViewController {
     @IBAction func drawInput(_ sender: Any) {
         inputArray = splitter(data: inputTextField.text!)
         canvas.setNeedsDisplay()
-        
-        
     }
     
     func splitter(data:String)->[String]{

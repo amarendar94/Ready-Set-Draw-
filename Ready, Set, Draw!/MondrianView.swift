@@ -10,12 +10,19 @@ import UIKit
 
 @IBDesignable class MondrianView: UIView {
 
-    /*
+    let colors:[UIColor] = [.red, .orange, .yellow, .green, .blue, .magenta, .purple]
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
         // Drawing code
+        if noOfRectangles>0{
+            
+        }
+        
+        
+        
+        
     }
-    */
+  
 
 }
