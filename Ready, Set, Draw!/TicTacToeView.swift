@@ -61,38 +61,38 @@ import UIKit
             var w:CGFloat = 1
             var h:CGFloat = 1
             
-            var firstIndex:String.Index = str.index(str.startIndex, offsetBy: 0)
-            var secondIndex:String.Index = str.index(str.startIndex, offsetBy: 1)
-            var thirdIndex:String.Index = str.index(str.startIndex, offsetBy: 2)
+            let firstIndex:String.Index = str.index(str.startIndex, offsetBy: 0)
+            let secondIndex:String.Index = str.index(str.startIndex, offsetBy: 1)
+            let thirdIndex:String.Index = str.index(str.startIndex, offsetBy: 2)
             if(str[firstIndex] == "0"){
-                w = 6
-            }
-            if(str[firstIndex] == "1"){
-                w = 2
-            }
-            if(str[firstIndex] == "2"){
-                w = 1.2
-            }
-            if(str[secondIndex] == "0"){
                 h = 6
             }
-            if(str[secondIndex] == "1"){
+            if(str[firstIndex] == "1"){
                 h = 2
             }
-            if(str[secondIndex] == "2"){
+            if(str[firstIndex] == "2"){
                 h = 1.2
+            }
+            if(str[secondIndex] == "0"){
+                w = 6
+            }
+            if(str[secondIndex] == "1"){
+                w = 2
+            }
+            if(str[secondIndex] == "2"){
+                w = 1.2
             }
             
             if(str[thirdIndex] == "X" || str[thirdIndex] == "x"){
-                bezier.move(to: CGPoint(x:size.width/CGFloat(w) + size.width/10.0,y:size.height/CGFloat(h)))
-                bezier.addArc(withCenter: CGPoint(x:size.width/w,y:size.height/CGFloat(h)), radius: size.width/10.0, startAngle: 0.0, endAngle: 2 * .pi , clockwise: true)
-            }
-            
-            if(str[thirdIndex] == "O" || str[thirdIndex] == "o"){
                 bezier.move(to: CGPoint(x:size.width/CGFloat(w) - size.width/10.0, y:size.height/CGFloat(h) - size.height/10.0))
                 bezier.addLine(to: CGPoint(x:size.width/CGFloat(w) + size.width/10.0, y:size.height/CGFloat(h) + size.height/10.0))
                 bezier.move(to: CGPoint(x:size.width/CGFloat(w) + size.width/10.0, y:size.height/CGFloat(h) - size.height/10.0))
                 bezier.addLine(to: CGPoint(x:size.width/CGFloat(w) - size.width/10.0, y:size.height/CGFloat(h) + size.height/10.0))
+            }
+            
+            if(str[thirdIndex] == "O" || str[thirdIndex] == "o"){
+                bezier.move(to: CGPoint(x:size.width/CGFloat(w) + size.width/10.0,y:size.height/CGFloat(h)))
+                bezier.addArc(withCenter: CGPoint(x:size.width/w,y:size.height/CGFloat(h)), radius: size.width/10.0, startAngle: 0.0, endAngle: 2 * .pi , clockwise: true)
             }
         }
         

@@ -8,8 +8,7 @@
 
 import UIKit
 
-@IBDesignable
-class ClockView: UIView {
+@IBDesignable class ClockView: UIView {
     
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
