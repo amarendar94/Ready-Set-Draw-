@@ -8,15 +8,17 @@
 
 import UIKit
 
+var inputArray:[String] = []
+
 class TicTacToeViewController: UIViewController {
 
     @IBOutlet weak var inputTextField: UITextField!
+    @IBOutlet weak var canvas: TicTacToeView!
     
     @IBAction func drawInput(_ sender: Any) {
-        let arrayToDraw:[String] = splitter(data: inputTextField.text!)
-        for each in arrayToDraw{
-            
-        }
+        inputArray = splitter(data: inputTextField.text!)
+        //TicTacToeView.setNeedsDisplay(<#T##UIView#>)
+        
         
     }
     

@@ -29,10 +29,6 @@ import UIKit
     }
     
     override func draw(_ rect: CGRect) {
-        let bezier = UIBezierPath()
-        let size = self.frame.size
-        
-        bezier.move(to:CGPoint(x:0.0,y:size.height/3))
         drawBorder()
         drawTicks()
         let time = ctime()
