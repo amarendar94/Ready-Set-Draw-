@@ -22,9 +22,8 @@ import UIKit
                 let yCrd = Int(arc4random_uniform(185))
                 let width = Int(arc4random_uniform(185))
                 let height = Int(arc4random_uniform(185))
-                let randomRectangle = UIBezierPath(rect: CGRect(x:  xCrd, y:  yCrd, width:  width, height:  height
-  
-                if fillOrOutline == 1{
+                let randomRectangle = UIBezierPath(rect: CGRect(x:  xCrd, y:  yCrd, width:  width, height:  height))
+                if fillOrOutline == 1 {
                     colors[Int(arc4random_uniform(6))].setFill()
                     randomRectangle.fill()
                 } else{
